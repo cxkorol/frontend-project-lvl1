@@ -7,7 +7,7 @@ const startGame = (gameDiscription, questionGenerator) => {
     console.log(`${gameDiscription}\n`)
 
     const userName = readlineSync.question('What is your name, %username: ');
-    console.log(`You are welcome ${userName}`)
+    console.log(`You are welcome, ${userName}`)
 
     for (let i = 0; i < attempts; i++) {
         const questionAnswer = questionGenerator();
