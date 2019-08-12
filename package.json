@@ -1,11 +1,12 @@
 {
-  "name": "brain-games",
+  "name": "brain-games-korol",
   "version": "1.0.1",
   "description": "hexlet-project-lvl1",
   "main": "",
   "bin": {
-    "brain-games": "./src/bin/brain-games.js",
-    "brain-even": "./src/bin/brain-even.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +21,8 @@
     "dist"
   ],
   "keywords": [
-    "first"
+    "Hexlet", 
+    "brain-games"
   ],
   "author": "Anrew Kolesnikov",
   "license": "ISC",
