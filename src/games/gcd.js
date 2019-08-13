@@ -7,8 +7,8 @@ const gcdOfTwoNumbers = (number1, number2) => {
 
   while (second) {
     const temp = second;
-    first %= second;
-    second = temp;
+    second = first % second;
+    first = temp;
   }
   return first;
 };
