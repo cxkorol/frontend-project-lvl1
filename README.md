@@ -5,7 +5,7 @@
 <details>
 <summary>1. Parity Check:</summary> 
 <br>
-[![asciicast](https://asciinema.org/a/IhNrBI5djewMVEuYVaksgNPcG.svg)](https://asciinema.org/a/IhNrBI5djewMVEuYVaksgNPcG);
+<a href="https://asciinema.org/a/oeeRboKmQG2T51feauu4QWsKB" target="_blank"><img src="https://asciinema.org/a/oeeRboKmQG2T51feauu4QWsKB.svg" /></a>
 </details>
 
 <details>
