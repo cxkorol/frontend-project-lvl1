@@ -1,3 +1,4 @@
-import startGame from '../games/progression.js';
+#!/usr/bin/env node
+import startGame from '../games/progression';
 
 startGame();
