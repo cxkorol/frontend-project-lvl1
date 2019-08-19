@@ -12,7 +12,7 @@ const findGcdOfTwoNumbers = (number1, number2) => {
   }
   return first;
 };
-const gameDiscription = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const playGcdGame = () => {
   const number1 = getRandomNumber();
@@ -23,4 +23,4 @@ const playGcdGame = () => {
   return [question, rightAnswer.toString()];
 };
 
-export default () => runGame(gameDiscription, playGcdGame);
+export default () => runGame(gameDescription, playGcdGame);
