@@ -1,28 +1,31 @@
-import startGame from '..';
+import runGame from '..';
 import getRandomNumber from '../utilities';
 
-const gameDiscription = 'What is the result of the expression?';
-const mathOperationsArr = ['+', '-', '*'];
+const gameDescription = 'What is the result of the expression?';
+const mathOperationsCount = ['+', '-', '*'];
 
-const startCalculate = () => {
-  const mathOper = mathOperationsArr[getRandomNumber(0, mathOperationsArr.length - 1)];
+const playCalculateGame = () => {
+  const mathOperation = mathOperationsCount[getRandomNumber(0, mathOperationsCount.length - 1)];
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
-  const question = `${number1} ${mathOper} ${number2}`;
+  const question = `${number1} ${mathOperation} ${number2}`;
   let answer = '';
 
-  switch (mathOper) {
+  switch (mathOperation) {
     case '+':
       answer = number1 + number2;
       break;
     case '-':
       answer = number1 - number2;
       break;
-    default:
+    case '*':
       answer = number1 * number2;
+      break;
+    default:
+      return null;
   }
 
   return [question, answer.toString()];
 };
 
-export default () => startGame(gameDiscription, startCalculate);
+export default () => runGame(gameDescription, playCalculateGame);

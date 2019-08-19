@@ -1,5 +1,5 @@
 import getRandomNumber from '../utilities';
-import startGame from '..';
+import runGame from '..';
 
 const makeProgression = (first, step, length) => {
   const progression = [];
@@ -8,20 +8,21 @@ const makeProgression = (first, step, length) => {
   }
   return progression;
 };
-const gameDiscription = 'What number is missing in the progression?';
+
+const gameDescription = 'What number is missing in the progression?';
 const length = 10;
 
-const makeQuest = () => {
-  const number = getRandomNumber();
+const playProgressionGame = () => {
+  const firstElementOfProgression = getRandomNumber();
   const step = getRandomNumber();
   const position = getRandomNumber(0, length - 1);
-  const progression = makeProgression(number, step, length);
+  const progression = makeProgression(firstElementOfProgression, step, length);
 
   const rightAnswer = progression[position];
-  progression[position] = ' ? ';
+  progression[position] = ' .. ';
   const question = progression.join(' ');
 
   return [question, rightAnswer.toString()];
 };
 
-export default () => startGame(gameDiscription, makeQuest);
+export default () => runGame(gameDescription, playProgressionGame);

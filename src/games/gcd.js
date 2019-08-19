@@ -1,7 +1,7 @@
 import getRandomNumber from '../utilities';
-import startGame from '..';
+import runGame from '..';
 
-const gcdOfTwoNumbers = (number1, number2) => {
+const findGcdOfTwoNumbers = (number1, number2) => {
   let first = number1;
   let second = number2;
 
@@ -14,13 +14,13 @@ const gcdOfTwoNumbers = (number1, number2) => {
 };
 const gameDiscription = 'Find the greatest common divisor of given numbers.';
 
-const makeQuest = () => {
+const playGcdGame = () => {
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
   const question = `Find the GCD between ${number1} & ${number2}`;
-  const rightAnswer = gcdOfTwoNumbers(number1, number2);
+  const rightAnswer = findGcdOfTwoNumbers(number1, number2);
 
   return [question, rightAnswer.toString()];
 };
 
-export default () => startGame(gameDiscription, makeQuest);
+export default () => runGame(gameDiscription, playGcdGame);

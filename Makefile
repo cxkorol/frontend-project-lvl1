@@ -8,7 +8,8 @@ publish:
 	npm publish --dry-run
 
 lint:
-	npx eslint
+	npx eslint . --ext .js
 
 build:
+	rm -rf dist
 	npm run build
