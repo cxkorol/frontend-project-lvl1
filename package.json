@@ -1,6 +1,6 @@
 {
   "name": "brain-games-korol",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Проект «Игры Разума»: набор небольших консольных игр",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
