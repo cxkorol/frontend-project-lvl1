@@ -12,11 +12,11 @@ const makeProgression = (first, step, length) => {
 const gameDescription = 'What number is missing in the progression?';
 const length = 10;
 
-const playProgressionGame = () => {
-  const firstElementOfProgression = getRandomNumber();
+const makeProgressionGame = () => {
+  const first = getRandomNumber();
   const step = getRandomNumber();
   const position = getRandomNumber(0, length - 1);
-  const progression = makeProgression(firstElementOfProgression, step, length);
+  const progression = makeProgression(first, step, length);
 
   const rightAnswer = progression[position];
   progression[position] = ' .. ';
@@ -25,4 +25,4 @@ const playProgressionGame = () => {
   return [question, rightAnswer.toString()];
 };
 
-export default () => runGame(gameDescription, playProgressionGame);
+export default () => runGame(gameDescription, makeProgressionGame);
