@@ -2,12 +2,15 @@ import getRandomNumber from '../utilities';
 import runGame from '..';
 
 const isPrime = (number) => {
-  if (number < 1) return false;
-  for (let i = 2; i < number / 2; i += 1) {
-    if (number % i === 0) return false;
+  const num = Math.abs(number);
+  if (num === 0 || num === 1) return false;
+  const maxFactorNum = Math.sqrt(number);
+  for (let i = 2; i <= maxFactorNum; i += 1) {
+    if (num % i === 0) return false;
   }
   return true;
 };
+
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 const makePrimeGame = () => {
