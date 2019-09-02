@@ -6,12 +6,12 @@
 `npm install -g brain-games-korol`
 
 ### Choose Games (types):
-brain-balance
-brain-even
-brain-calc
-brain-progression
-brain-gcd
-brain-prime
+- brain-balance
+- brain-even
+- brain-calc
+- brain-progression
+- brain-gcd
+- brain-prime
 
 ### Details:
 <details>
