@@ -2,10 +2,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/439d5a5e1bcb1fb8abb5/maintainability)](https://codeclimate.com/github/cxkorol/frontend-project-lvl1/maintainability) [![Build Status](https://travis-ci.org/cxkorol/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/cxkorol/frontend-project-lvl1)
 
-###Install:
+### Install:
 `npm install -g brain-games-korol`
 
-###Choose Games (types):
+### Choose Games (types):
 brain-balance
 brain-even
 brain-calc
@@ -13,7 +13,7 @@ brain-progression
 brain-gcd
 brain-prime
 
-###Details:
+### Details:
 <details>
     <summary>1. Parity Check:</summary> 
     <br>
