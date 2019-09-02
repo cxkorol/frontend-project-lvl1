@@ -15,11 +15,11 @@ const length = 10;
 const makeProgressionGame = () => {
   const first = getRandomNumber();
   const step = getRandomNumber();
-  const position = getRandomNumber(0, length - 1);
+  const hiddenPosition = getRandomNumber(0, length - 1);
   const progression = makeProgression(first, step, length);
 
-  const rightAnswer = progression[position];
-  progression[position] = ' .. ';
+  const rightAnswer = progression[hiddenPosition];
+  progression[hiddenPosition] = '..';
   const question = progression.join(' ');
 
   return [question, rightAnswer.toString()];

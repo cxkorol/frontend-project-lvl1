@@ -12,6 +12,7 @@ const greatestCommonDivisor = (number1, number2) => {
   }
   return first;
 };
+
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const makeGcdGame = () => {
