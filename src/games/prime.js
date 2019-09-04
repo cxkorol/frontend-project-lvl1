@@ -2,11 +2,10 @@ import getRandomNumber from '../utilities';
 import runGame from '..';
 
 const isPrime = (number) => {
-  const num = Math.abs(number);
-  if (num === 0 || num === 1) return false;
-  const maxFactorNum = Math.sqrt(number);
-  for (let i = 2; i <= maxFactorNum; i += 1) {
-    if (num % i === 0) return false;
+  if (number < 0) return false;
+  if (number === 0 || number === 1) return false;
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+    if (number % i === 0) return false;
   }
   return true;
 };
