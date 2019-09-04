@@ -1,6 +1,6 @@
 {
   "name": "brain-games-korol",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Проект «Игры Разума»: набор небольших консольных игр",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
-    "eslint-utils": ">=1.4.1",
+    "eslint-utils": "^1.4.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-babel": "^5.3.0",
